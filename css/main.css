@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Style all font awesome icons */
+body {
+    background-color: lightgray;
+    background-image: url('https://lh3.googleusercontent.com/proxy/4UztUU2H22jtneGxwh93mtEgVq7qyZAFd9M-75r8fjXPWedVXb7Wl5-hV-3Z14FSRUBfxODswEmewOnDwBdbFnvDDcAHMAV0bHPnfyeCCojJuXSl0ZFTFU-14A');
+    background-size: cover;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    /* position: absolute;
+    bottom: 0; */
+}
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.5;
+}
+  
+/* Set a specific color for each brand */
+  
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-reddit {
+    background: #FF4500;
+    color: white;
+}
+
+.fa-github {
+    background: black;
+    color: white;
+}
+
+.social-media {
+    text-align: center;
+    /* position:absolute;
+    bottom:200px;
+    width:100%; */
+}
+
+.panel {
+    padding: 2px;
+    background-color: gray;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: gray;
+    position: absolute;
+    bottom: 130px;
+}
+
+.social-media1 {
+    font-family: 'Dosis';
+    word-spacing: 5px;
+    text-align: center;
+    /* position:absolute;
+    bottom:240px; */
+    color: white;
+    width:100%;
+}
+
+/* img {
+    opacity: 0.5;
+} */
+
+.redirect-notice {
+    color: teal;
+    text-align: center;
+    font-family: 'VT323';
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    border: 12px solid white;
+    border-top: 12px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
