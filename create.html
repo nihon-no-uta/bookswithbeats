@@ -12,58 +12,61 @@
 <body>
     <div style="text-align: center;">
         <div class="navbar-collapse" style="background-color: white;"></div>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">🎼BwB<sup>♫</sup> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-            </button>
+        <nav class="navbar navbar-expand-lg sticky">
+              <a class="navbar-brand" href="#">🎼BwB<sup>♫</sup> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+              </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto" style="margin-left: 75%; margin-right:auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Something</a>
-                  </li>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li> -->
-              </ul>
-              <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form> -->
-            </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto" style="margin-left: 75%; margin-right:auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Something</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                      </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li> -->
+                  </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+              </div>
         </nav>
-        <br><br>
+        <br><br><br>
         <div class="container1">
             <div id="tool-window">
                 <br>
                 <h3 class="tool-title">Editing tools</h3>
                 <br>
                 <ul style="text-align: start;">
-                    <li class="tool-item edit-function" type="music" title="Add music to selected text"><i class="fa fa-plus-circle" aria-hidden="true"></i><i class="fa fa-music" aria-hidden="true"></i> Add music</li>
-                    <li class="tool-item edit-function" type="bold" onclick="this.classList.toggle('tool-item-selected')" title="Bold selected text"><i class="fa fa-bold" aria-hidden="true"></i> Bold Text</li>
+                    <!-- <li class="tool-item edit-function" type="music" title="Add music to selected text"><i class="fa fa-plus-circle" aria-hidden="true"></i><i class="fa fa-music" aria-hidden="true"></i> Add music</li> -->
+                    <li class="tool-item edit-function" type="bold" title="Bold selected text"><i class="fa fa-bold" aria-hidden="true"></i> Bold Text</li>
                     <li class="tool-item edit-function" type="italic" title="Italicize selected text"><i class="fa fa-italic" aria-hidden="true"></i> Italicize text</li>
                     <li class="tool-item edit-function" type="underline" title="Underline selected text"><i class="fa fa-underline" aria-hidden="true"></i> Underline text</li>
                     <li class="tool-item edit-function" type="subscript" title="Add subscript"><i class="fa fa-subscript" aria-hidden="true"></i> Subscript</li>
                     <li class="tool-item edit-function" type="superscript" title="Add superscript"><i class="fa fa-superscript" aria-hidden="true"></i> Superscript</li>
+                    <li class="tool-item" style="display: inline; float: left; padding-right: 10px;" type="play" title="Play music"><i class="fa fa-undo" aria-hidden="true"></i> Undo</li>
+                    <li class="tool-item" style="display: inline; float: right; padding-right: 15px;" type="pause" title="Pause music">Redo <i class="fa fa-redo" aria-hidden="true"></i></li>
                 </ul>
+                <br>
                 <hr class="separator">
                 <br>
                 <h3 class="tool-title">Navigation</h3>
@@ -76,9 +79,9 @@
                     <li class="tool-item" title="Find a specific page by absoulte page number or chapter name and offset number" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i> Find Page</li>
                     <div class="dropdown-menu" aria-labelledby="searchDropdown" style="background-color: transparent; border: none;">
                         <div class="search-window">
-                            <input type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 15px;" value="12">
-                            <input type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 15px; margin-bottom: 15px;" value="Chapter-1">
-                            <button class="search-button" style="outline: 0px; margin-bottom: 15px;">SEARCH <i class="fa fa-search" aria-hidden="true"></i></button>
+                            <input type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 15px; color: grey;" value="12">
+                            <input type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 15px; margin-bottom: 15px; color: grey;" value="Chapter-1">
+                            <button class="search-button" style="outline: 0px; margin-bottom: 15px; font-size: 20px;">Search <i class="fa fa-search-location" aria-hidden="true"></i></button>
                         </div>
 
                     </div>
@@ -105,9 +108,38 @@
                 <br>
                 <h3 class="tool-title">Audio Library</h3>
                 <br>
+                <div class="tool-item" style="display: inline; float: left; padding-right: 15px;"><i class="fa fa-caret-up" aria-hidden="true"></i> next</div>
+                <div class="tool-item" style="display: inline; float: right; padding-right: 15px;">prev <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                <br><br>
+                <ul style="text-align: start;">
+                    <div class="form-control search" id="filename" placeholder="file name">no file uploaded</div>
+                    <input class="form-control search" placeholder="No song uploaded" type="text" style="width: 170px; margin-left: auto; margin-right: auto; font-family: 'Special Elite'; border: none; outline: none;" readonly>
+                    <br>
+                    <li class="tool-item edit-function" type="music" title="Add music to selected text"><i class="fa fa-plus-circle" aria-hidden="true"></i><i class="fa fa-music" aria-hidden="true"></i> Add Music</li>
+                    <li class="tool-item" name="upload button" title="Upload music file" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-upload" aria-hidden="true"></i> Upload Song</li>
+                    <li class="tool-item" name="upload button" title="Upload music file" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-book-reader" aria-hidden="true"></i> From Library</li>
+                    <li class="tool-item" style="display: inline; float: left;" type="play" title="Play music"><i class="fa fa-play-circle" aria-hidden="true"></i> Play</li>
+                    <li class="tool-item" style="display: inline; float: right; padding-right: 15px;" type="pause" title="Pause music"><i class="fa fa-pause-circle" aria-hidden="true"></i> Pause</li>
+                    <div class="dropdown-menu" aria-labelledby="searchDropdown" style="background-color: transparent; border: none;">
+                        <div class="search-window">
+                            <input id="uploaded-file-name" type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 20px; color: grey;" value="no file uploaded">
+                            <input type="text" style="outline: none; font-family: 'Special Elite'; margin-top: 15px; color: grey;" value="upload by url">
+                            <br>
+                            <button class="search-button" name="uploadbttn" style="outline: 0px; margin-top: 10px; margin-bottom: 20px; margin-left: 5px; font-size: 20px;">UPLOAD <i class="fa fa-upload" aria-hidden="true"></i></button>
+                            <!-- &nbsp; -->
+                            <!-- <form action="" method="POST"> -->
+                            <input id="hidden-file" type="file" hidden/>
+                            <button class="search-button" name="openbutton" style="outline: 0px; margin-top: 10px; margin-bottom: 20px; margin-left: 5px; font-size: 20px;">OPEN <i class="fa fa-file" aria-hidden="true"></i></button>
+                            <!-- </form> -->
+                            <!-- <button class="search-button" style="outline: 0px; margin-bottom: 15px; float: right; display: inline;">SUBMIT</button> -->
+                        </div>
+                    </div>
+                </ul>
+                <br>
                 <hr class="separator">
                 <br>
                 <h3 class="tool-title">Explore Ideas</h3>
+                <br>
                 <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
                     <!-- <input name="sitesearch" type="hidden" value="example.com"> -->
                     <input autocomplete="on" class="form-control search" name="q" placeholder="Explore with google.com" required="required" type="text" style="width: 170px; margin-left: auto; margin-right: auto; font-family: 'Special Elite'; border: none; outline: none; color: purple">
@@ -119,7 +151,6 @@
         <div id="footer">
             <span class="copyright" title="copyright notice"><i class="fa fa-copyright" aria-hidden="true"></i></span> 2020 Atharva Naik, All Rights Reserved
         </div>
-    </div>  
     <script src="js/select.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

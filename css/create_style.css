@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Finger+Paint&display=swap');
+
 input{
     width: 70%;
 }
@@ -10,6 +11,7 @@ body{
     /* background-color: #262626; */    
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    width: 100%;
 }
 
 .nav-link{
@@ -20,13 +22,19 @@ body{
     text-align: right;
 }
 
-.nav-link:hover{
-    opacity: 0.8;
-    padding-top: 3px;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+#filename{
+    margin-left: auto; 
+    margin-right: auto; 
+    font-family: 'VT323';
+    font-size: 22px; 
+    margin-top: -15px;
+    /* margin-bottom: -5px; */
+    margin-bottom: 5px;
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
     color: white;
-    text-shadow: -2px 2px grey;
+    text-align: center;
 }
 
 .dropdown-menu{
@@ -52,17 +60,22 @@ body{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
     /* background-image: linear-gradient(0deg, #242424, #727272); */
     height: 50px;
+    width: 100vw;
+}
+
+.navbar-expand-lg{
+    width: 100vw;
+    white-space: nowrap;
 }
 
 .navbar-brand{
     color: white;
-    text-shadow: -1px 1px grey;
+    /* text-shadow: -1px 1px grey; */
+    background-color: #484848;
+    padding: 8px;
+    margin-left: -14px;
+    /* padding-left: 10px; */
     font-family: 'Finger Paint', cursive;
-}
-
-.navbar-brand:hover{
-    color: yellow;
-    text-shadow: -1px 1px orange;
 }
 
 .navbar-toggler{
@@ -72,22 +85,21 @@ body{
     outline: 0px;
 }
 
-.navbar-toggler:hover{
-    background-color: #4158D0;
-    background-image: linear-gradient(-45deg, #4158D0 22%, #C850C0 60%);
-    border: none;
-    outline: 0px;
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content{
+    padding-top: 60px;
 }
 
 .navbar-toggler-icon{
     padding: 4px;
     color: white;
-}
-
-.navbar-toggler-icon:hover{
-    padding-top: 5px;
-    padding-left: 5px;
-    text-shadow: -2px 2px grey;
 }
 
 .tool-title{
@@ -133,16 +145,6 @@ ul{
     padding-right: 3px;
     color: white;
     text-shadow: -2px 2px grey;
-}
-
-.tool-item:hover{
-    color: white;
-    padding-top: 3px;
-    padding-right: 3px;
-    text-decoration: none;
-    text-shadow: -2px 2px grey;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
 }
 
 .separator{
@@ -236,17 +238,17 @@ ul{
     word-spacing: -1px;
 }
 
-.copyright:hover{
-    color: white;
-}
-
 .search-window{
     text-align: center; 
     width: 200px;
     border-radius: 5px;
-    background: #30E8BF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(45deg, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);    
+    /* background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+    /* background: #30E8BF;  
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  
+    background: linear-gradient(45deg, #FF8235, #30E8BF);  */
 }
 
 .search-button{
@@ -259,8 +261,56 @@ ul{
     font-size: 22px;
 }
 
-.search-button:hover{
-    color: #484848;
-    background-color: white;
-    outline: 0px;
+@media(hover: hover) and (pointer: fine) {
+    .nav-link:hover{
+        opacity: 0.8;
+        padding-top: 3px;
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+        color: white;
+        text-shadow: -2px 2px grey;
+    }
+
+    .navbar-brand:hover{
+        color: #484844;
+        background-color: white;
+        font-family: 'Finger Paint', cursive;
+    }
+
+    .navbar-toggler:hover{
+        background-color: #4158D0;
+        background-image: linear-gradient(-45deg, #4158D0 22%, #C850C0 60%);
+        border: none;
+        outline: 0px;
+        cursor: pointer;
+    }
+
+    .navbar-toggler-icon:hover{
+        padding-top: 5px;
+        padding-left: 5px;
+        text-shadow: -2px 2px grey;
+        cursor: pointer;
+    }
+
+    .tool-item:hover{
+        color: white;
+        padding-top: 3px;
+        padding-right: 3px;
+        text-decoration: none;
+        text-shadow: -2px 2px grey;
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+        cursor: pointer;
+    }
+
+    .search-button:hover{
+        color: #484848;
+        background-color: white;
+        outline: 0px;
+        cursor: pointer;
+    }
+
+    .copyright:hover{
+        color: white;
+    }
 }
